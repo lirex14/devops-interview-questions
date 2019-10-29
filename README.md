@@ -1661,7 +1661,9 @@ List
 #### :baby: beginner
 
 <details>
-<summary>What is Docker? What are you using it for?</summary><br><b>
+<summary>What is Docker? What are you using it for?</summary><br>
+<b>
+    Containers. Hosting applications that are to be run/deployed in different enviornments. 
 </b></details>
 
 <details>
@@ -1699,22 +1701,30 @@ Docker daemon redirects output from container to Docker CLI which redirects it t
 
 <details>
 <summary>How do you run a container?</summary><br><b>
+
+  docker run image-name 
+  -p 3000:3000
+  -d dormant 
 </b></details>
 
 <details>
 <summary>What best practices are you familiar related to working with containers?</summary><br><b>
+Least Privilidge/Not having the container run as root
 </b></details>
 
 <details>
 <summary>What `docker commit` does?. When will you use it?</summary><br><b>
+When you interactively make changes on a container, docker commit allows the user to save these changes with 'docker commit containter-id'
 </b></details>
 
 <details>
 <summary>How would you transfer data from one container into another?</summary><br><b>
+Volumens and docker-compose?
 </b></details>
 
 <details>
 <summary>What happens to data of the container when a container exists?</summary><br><b>
+Data not stored in volumes are lost
 </b></details>
 
 <details>
@@ -1729,12 +1739,15 @@ Docker daemon redirects output from container to Docker CLI which redirects it t
 
 <details>
 <summary>How do you remove old, non running, containers?</summary><br><b>
+docker system prune
+docker image prune 
 </b></details>
 
 ##### Dockerfile
 
 <details>
 <summary>What is Dockerfile</summary><br><b>
+A procedural list of 'step' to create the desired run-time environment 
 </b></details>
 
 <details>
@@ -1747,6 +1760,7 @@ Docker daemon redirects output from container to Docker CLI which redirects it t
 
 <details>
 <summary>Explain what is Docker compose and what is it used for</summary><br><b>
+Managing communication between containers. Having one container only be responsible to one task ie application container, redis container, postgres container. 
 </b></details>
 
 <details>
@@ -1774,6 +1788,7 @@ Swarm management which means you can create new swarms in Docker Cloud.
 
 <details>
 <summary>Explain image layers</summary><br><b>
+Each step in a Dockerfile create a layer that are joined together to create the docker image 
 </b></details>
 
 <a name="docker-advanced"></a>
@@ -1781,14 +1796,17 @@ Swarm management which means you can create new swarms in Docker Cloud.
 
 <details>
 <summary>How do you manage persistent storage in Docker?</summary><br><b>
+Volmes 
 </b></details>
 
 <details>
 <summary>How can you connect from the inside of your container to the localhost of your host, where the container runs?</summary><br><b>
+docker run -p 3000:3000 image-name
 </b></details>
 
 <details>
 <summary>How do you copy files from Docker container to the host and vice versa?</summary><br><b>
+docker cp container-id host-path 
 </b></details>
 
 ## Kubernetes
@@ -1869,6 +1887,7 @@ Re-install the OS IS NOT the right answer :)
 
 <details>
 <summary>Explain big O notation</summary><br><b>
+Describes the bounds of an algorithm with regards to space/complexity  
 </b></details>
 
 ##### Code Review
@@ -1888,6 +1907,7 @@ Re-install the OS IS NOT the right answer :)
 
 <details>
 <summary>In any language you want, write a function to determine if a given string is a palindrome</summary><br><b>
+
 </b></details>
 
 <details>
@@ -2191,6 +2211,8 @@ with open('file.txt', 'w') as file:
 
 <details>
 <summary>How to reverse a file?</summary><br><b>
+--memory concerns for large files 
+https://stackoverflow.com/questions/2301789/read-a-file-in-reverse-order-using-python
 </b></details>
 
 #### Regex
@@ -2303,6 +2325,7 @@ def reverse_string(string):
 
 <details>
 <summary>How to combine list of strings into one string with spaces between the strings</summary><br><b>
+' '.join(myList)
 </b></details>
 
 <details>
@@ -2362,6 +2385,9 @@ def reverse_string(string):
 
 <details>
 <summary>Do you have experience with web scraping? Can you describe what have you used and for what?</summary><br><b>
+BeautifulSoup
+Selineum 
+--note on dynamacially generate sites (iterative html) needs to be loaded first so uses webDriver 
 </b></details>
 
 <details>
@@ -2370,6 +2396,9 @@ def reverse_string(string):
 
 <details>
 <summary>You have created a web page where a user can upload a document. But the function which reads the uploaded files, runs for a long time, based on the document size and user has to wait for the read operation to complete before he/she can continue using the web site. How can you overcome this?</summary><br><b>
+
+Async ????
+
 </b></details>
 
 ## Monitoring
@@ -2812,6 +2841,7 @@ as key-value pair, document-oriented, etc.
 
 <details>
 <summary>What this line in scripts mean?: <code>#!/bin/bash</code></summary><br><b>
+specifies the interpreter 
 </b></details>
 
 <details>
@@ -2894,6 +2924,7 @@ Using the keyword <code>read</code> so for example <code>read x</code> will wait
 
 <details>
 <summary>Write a script which will list the differences between two directories</summary><br><b>
+diff <(ls -al /path/one) <(ls -al /path/two)>
 </b></details>
 
 <a name="shell-scripting-advanced"></a>
