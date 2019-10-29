@@ -813,6 +813,9 @@ Using the `chmod` command.
 
 <details>
 <summary>You try to delete a file but it fails. Name at least three different reason as to why it could happen</summary><br><b>
+1. Permission
+2.
+3. 
 </b></details>
 
 <details>
@@ -881,6 +884,8 @@ Using the `chmod` command.
 
 <details>
 <summary>What is the difference between SSH and SSL?</summary><br><b>
+SSL is an authentication method
+SSH is remote access to a VM/machine 
 </b></details>
 
 <details>
@@ -893,6 +898,8 @@ Using the `chmod` command.
 
 <details>
 <summary>What are wildcards? Can you give an example of how to use them?</summary><br><b>
+regex, splunk, listing all files with a keyword to start
+ls -al test-*.txt 
 </b></details>
 
 <details>
@@ -3302,10 +3309,12 @@ the pseudo table to retrieve the sum of the prices spent by each customer, then 
 
 <details>
 <summary>What is XSS?</summary><br><b>
+cross site scripting, --> a site that takes user input executes malicious javascript 
 </b></details>
 
 <details>
 <summary>What is an SQL injection? How to manage it?</summary><br><b>
+the UI to a db doesn't have the safe guards around the user sending in a malicious sql query
 </b></details>
 
 <details>
@@ -3367,6 +3376,7 @@ the pseudo table to retrieve the sum of the prices spent by each customer, then 
 
 <details>
 <summary>Explain "Format String Vulnerability"</summary><br><b>
+printf can leak program memory information when used with specific flags 
 </b></details>
 
 <details>
