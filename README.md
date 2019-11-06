@@ -755,6 +755,9 @@ TCP establishes a connection between the client and the server to guarantee the 
   * wc
   * curl
   * touch
+    create, access, modify file and the timestamp of that file 
+    touch newfile
+    
   * man
   * nslookup or dig
   * df</summary><br><b>
