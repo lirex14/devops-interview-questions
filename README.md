@@ -2,9 +2,14 @@
 
 :information_source: &nbsp;This repository contains interview questions on various DevOps and SRE related topics
 
-:bar_chart: &nbsp;There are currently **503** questions
+:bar_chart: &nbsp;There are currently **509** questions
 
-:books: &nbsp;To learn more about DevOps check the resources in [devops-resources](https://github.com/bregman-arie/devops-resources)
+***
+<p align="center"><b> 🎉 Questions are now available at <a href="http://devopsbit.com/devops-interview-questions">devopsbit.com</a> 🎉 </b> </p>
+
+***
+
+:books: &nbsp;To learn more about DevOps check the resources in [DevOpsBit.com](https://devopsbit.com)
 
 :thought_balloon: &nbsp;Different interviewers focus on different things. Some will focus on your resume while others might focus on scenario questions or specific technical questions. I tried to cover different types of questions for you to practice and test your skills
 
@@ -313,6 +318,12 @@ Note: cross-dependency is when you have two or more changes to separate projects
 
 <details>
 <summary>Can you describe some of Jenkins best practices?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Describe how do you add new slaves to Jenkins</summary><br><b>
+
+You can describe the UI way to add new slaves but better to explain how to do in a way that scales like a script or using dynamic source for slaves like one of the existing clouds.
 </b></details>
 
 <a name="jenkins-advanced"></a>
@@ -1646,6 +1657,10 @@ List
 </b></details>
 
 <details>
+<summary>What is a data source? In what scenarios for example would need to use it?</summary><br><b>
+</b></details>
+
+<details>
 <summary>What are output variables and what <code>terraform output</code> does?</summary><br><b>
 </b></details>
 
@@ -1656,6 +1671,11 @@ List
 <details>
 <summary>What is the Terraform Registry?</summary><br><b>
 </b></details>
+
+<details>
+<summary>Explain <code>remote-exec</code> and <code>local-exec</code></summary><br><b>
+</b></details>
+
 
 <a name="terraform-advanced"></a>
 #### :star: Advanced
@@ -1834,10 +1854,20 @@ docker cp container-id host-path
 
 <details>
 <summary>Why Docker isn't enough? Why do we need Kubernetes?</summary><br><b>
+
+Kubernetes is especially good for scenarios when you no longer running small number of containers. When you have to scale from 3 containers for eaxmple to hundreds or thousands of containers.
 </b></details>
 
 <details>
 <summary>Describe the architecture of Kubernetes</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is a worker?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Explain what is a Pod</summary><br><b>
 </b></details>
 
 <details>
@@ -3503,6 +3533,24 @@ Although the following questions are not DevOps related, they are still quite co
 <summary>Tell me about your last big project/task you worked on</summary><br><b>
 </b></details>
 
+<details>
+<summary>Why do you want to work here?</summary><br><b>
+</b></details>
+
+## Questions you CAN ask
+
+A list of questions you as a candidate can ask the interviewer during or after the interview.
+These are only a suggestion. Use them carefully :)
+
+<details>
+<summary>What do you like about working here?</summary><br><b>
+</b></details>
+
+<details>
+<summary>How does the company promote personal growth?</summary><br><b>
+</b></details>
+
+
 ## Scenarios
 
 Scenarios are questions which don't have verbal answer and require you one of the following:
@@ -3520,3 +3568,11 @@ Below you can find several scenario questions:
 * [Cloud Slack bot](scenarios/cloud_slack_bot.md)
 * [Writing Jenkins Scripts](scenarios/jenkins_scripts.md)
 * [Writing Jenkins Pipelines](scenarios/jenkins_pipelines.md)
+
+## Credits
+
+Logos credits can be found [here](credits.md)
+
+## License
+
+[![License: CC BY-NC-ND 3.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/3.0/)
