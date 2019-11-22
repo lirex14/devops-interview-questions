@@ -2322,6 +2322,13 @@ set([food for bro in x for food in bro['food']])
 
 <details>
 <summary>What is List Comprehension? Is it better than a typical loop? Why? Can you demonstrate how to use it?</summary><br><b>
+
+List comprehension a suscinct way to define a new list given a list input that you want to apply some filtering or logic on
+
+lst  =  [x ** 2  for x in range (1, 11)   if  x % 2 == 1] 
+
+x**2 for all odd numbers in range(1,11) 
+
 </b></details>
 
 <details>
@@ -2356,6 +2363,9 @@ def reverse_string(string):
 
 <details>
 <summary>Explain what is GIL</summary><br><b>
+The Python Global Interpreter Lock or GIL, in simple words, is a mutex (or a lock) that allows only one thread to hold the control of the Python interpreter. Therefore multi-threaded programs that are CPU intensive are faced with the GIL bottleneck. 
+https://realpython.com/python-gil/
+
 </b></details>
 
 <details>
@@ -2368,10 +2378,15 @@ def reverse_string(string):
   * Static method
   * Class method
   * instance method</summary><br><b>
+  Static methods can be used without an instance of the object @saticmethod decorator
+  Instance methods can only be called after an instance of the object is created 
+  Class methods can modify class state and take cls (class) as it first argument. @classmethod decorator 
 </b></details>
 
 <details>
 <summary>How to reverse a list?</summary><br><b>
+reversedList = initialList[::-1] , for small list
+perhaps would need to chunk, reverse, then join for larger lists 
 </b></details>
 
 <details>
@@ -2459,6 +2474,7 @@ Async ????
 
 <details>
 <summary>Explain monitoring. What is it? What its goal?</summary><br><b>
+Monitoring is the act of of obtaining metics of an application and its environment without directly accessing the host environment. Typically application logs are forwarded out of the VM (splunk) and CPU and addition VM level metrics are extracted via a monitoring application (data dog, prometheus)
 </b></details>
 
 <details>
@@ -2478,6 +2494,8 @@ Logging
 
 <details>
 <summary>What is the different between infrastructure monitoring and application monitoring? (methods, tools, ...)</summary><br><b>
+Application monitor --> logs (splunk)
+Infrastructure montioring --> data dog, prometheus (cpu, memory, ram)
 </b></details>
 
 ## Prometheus
