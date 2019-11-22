@@ -538,10 +538,15 @@ Stop the instance, the type of the instance to match the desired RAM and start t
 
 <details>
 <summary>What is EBS?</summary><br><b>
+Elastic Block Storage
+Similar to a hard drive --> an abstraction that allows you to maintain a files system that interfaces with your EC2 instances. 
 </b></details>
 
 <details>
 <summary>What is VPC?</summary><br><b>
+Virtual Private Cloud 
+Allows you to manage network level security and permissions.
+Only applications/users within a VPC and access each other. 
 </b></details>
 
 ## Network
@@ -1773,6 +1778,8 @@ Docker daemon redirects output from container to Docker CLI which redirects it t
 <details>
 <summary>What best practices are you familiar related to working with containers?</summary><br><b>
 Least Privilidge/Not having the container run as root
+.dockerignore --> removing files like .git from the docker container 
+
 </b></details>
 
 <details>
@@ -1815,10 +1822,16 @@ A procedural list of 'step' to create the desired run-time environment
 
 <details>
 <summary>What is the difference between ADD and COPY in Dockerfile?</summary><br><b>
+COPY takes a host source and a container destination 
+ADD allows you to use a URL or tar file that will be extracted to the destination 
 </b></details>
 
 <details>
 <summary>What is the difference between CMD and RUN in Dockerfile?</summary><br><b>
+CMD is a default command that the docker container will execute when no run params are passed in
+RUN executes commands on a new lays -- often used for package installs 
+ENTRYPOINT is like CMD but it is not ignored when not provided. Additional build time args will first hit the entry point and then the CMD. 
+https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
 </b></details>
 
 <details>
@@ -1832,6 +1845,8 @@ Managing communication between containers. Having one container only be responsi
 
 <details>
 <summary>Explain Docker interlock</summary><br><b>
+HARD 
+https://docs.docker.com/ee/ucp/interlock/architecture/
 </b></details>
 
 <details>
@@ -1847,6 +1862,8 @@ Swarm management which means you can create new swarms in Docker Cloud.
 
 <details>
 <summary>Where Docker images are stored?</summary><br><b>
+Container registry  ?
+
 </b></details>
 
 <details>
@@ -1859,7 +1876,7 @@ Each step in a Dockerfile create a layer that are joined together to create the 
 
 <details>
 <summary>How do you manage persistent storage in Docker?</summary><br><b>
-Volmes 
+Volumes  
 </b></details>
 
 <details>
