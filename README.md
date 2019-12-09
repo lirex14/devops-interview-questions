@@ -1,17 +1,14 @@
 # DevOps Interview Questions
 
-:information_source: &nbsp;This repository contains interview questions on various DevOps and SRE related topics
+:information_source: &nbsp;This repository contains questions on various DevOps and SRE related topics
 
-:bar_chart: &nbsp;There are currently **516** questions
-
-***
-<p align="center"><b> 🎉 Questions are now available at <a href="http://devopsbit.com/devops-interview-questions">devopsbit.com</a> 🎉 </b> </p>
-
-***
+:bar_chart: &nbsp;There are currently **609** questions
 
 :books: &nbsp;To learn more about DevOps check the resources in [DevOpsBit.com](https://devopsbit.com)
 
-:thought_balloon: &nbsp;Different interviewers focus on different things. Some will focus on your resume while others might focus on scenario questions or specific technical questions. I tried to cover different types of questions for you to practice and test your skills
+:warning: &nbsp;The purpose of this repo is to help you test your knowledge and prepare for interviews. It doesn't represents a DevOps interview. Please read [Q&A](common-qa.md) for more details
+
+:thought_balloon: &nbsp;If you wonder how to prepare to your DevOps Interview, we added a couple of suggestions [here](prepare_for_interview.md)
 
 :pencil: &nbsp;You can add more questions & answers by submitting pull requests :) You can read more about it [here](CONTRIBUTING.md)
 
@@ -56,6 +53,10 @@
   </tr>
   <tr>
     <td align="center"><a href="#monitoring"><img src="images/monitoring.png" width="75px;" height="75px;" alt="Monitoring"/><br /><b>Monitoring</b></a><br /><sub><a href="#monitoring-beginner">Beginner :baby:</a></sub><br><sub></td>
+    <td align="center"><a href="#elastic"><img src="images/elastic.png" width="110px;" height="75px;" alt="Elastic"/><br /><b>Elastic</b></a><br /><sub><a href="#elastic-beginner">Beginner :baby:</a></sub><br><sub></td>
+    <td align="center"><a href="#dns"><b>DNS</b></a><br /><sub><a href="#dns-beginner">Beginner :baby:</a></sub><br><sub></td>
+    <td align="center"><a href="#virtualization"><b>Virtualization</b></a><br /><sub><a href="#virtualization-beginner">Beginner :baby:</a></sub><br><sub></td>
+    <td align="center"><a href="#operating-system"><b>Operating System</b></a><br /><sub><a href="#operating-system-beginner">Beginner :baby:</a></sub><br><sub></td>
     <td align="center"><a href="#general"><img src="images/general.png" width="110px;" height="75px;" alt="General"/><br /><b>General</b></a></td>
     <td align="center"><a href="#scenarios"><img src="images/scenarios.png" width="110px;" height="75px;" alt="Scenarios"/><br /><b>Scenarios</b></a></td>
   </tr>
@@ -125,8 +126,8 @@ Each piece of code (change/patch) is verified, to make the change is safe to mer
   * CI/CD
   * Provisioning infrastructure
   * Configuration Management
-  * Monitoring & alerting - Prometheus, DataDog, Sensu, Grafana
-  * Logging - ELK (Elastic Search, Logstash, Kibana), EFK (Elastic Search, Fluentd, Kibana)
+  * Monitoring & alerting
+  * Logging
   * Code review
   * Code coverage
   * Tests</summary><br><b>
@@ -190,6 +191,10 @@ Stateful applications depend on the storage to save state and data, typically da
 
 <details>
 <summary>Explain "Open Source"</summary><br><b>
+</b></details>
+
+<details>
+<summary>Describe me the architecture of service/app/project/... you designed and/or implemented</summary><br><b>
 </b></details>
 
 ##### SRE
@@ -280,6 +285,10 @@ Note: cross-dependency is when you have two or more changes to separate projects
   * Bamboo
   * Teamcity
   * CircleCI</summary><br><b>
+</b></details>
+
+<details>
+<summary>What are the limitations or disadvantages of Jenkins?</summary><br><b>
 </b></details>
 
 <details>
@@ -523,6 +532,33 @@ Stop the instance, the type of the instance to match the desired RAM and start t
   * Classic LB - low costs, good for test or dev environments
 </b></details>
 
+##### Security 
+
+<summary>What is the shared responsibility model? In other words, what AWS is responsible for and what the user is responsible for in regards to Security?</summary><br><b>
+</b></details>
+
+<summary>What is the AWS compliance program?</summary><br><b>
+</b></details>
+
+<summary>Explain what each of the following services is used for
+
+  * AWS Inspector
+  * AWS Artifact
+  * AWS WAF
+  * AWS Shield</summary><br><b>
+</b></details>
+
+<summary>What AWS VPN is usef for?</summary><br><b>
+</b></details>
+
+<summary>What is the difference between Site-to-Site VPN and Client VPN?</summary><br><b>
+</b></details>
+
+<summary>True or False? AWS Inspector can perform both network and host assessments</summary><br><b>
+
+True
+</b></details>
+
 #### Databases
 
 <details>
@@ -646,17 +682,25 @@ CSMA/CD algorithm:
 </b></details>
 
 <details>
+<summary>What is TCP? How it works? What is the 3 way handshake?</summary><br><b>
+</b></details>
+
+<details>
 <summary>What is the difference between TCP and UDP?</summary><br><b>
 	
 TCP establishes a connection between the client and the server to guarantee the order of the packages, on the other hand, UDP does not establish a connection between client and server and doesn't handle package order. This makes UDP more lightweight than TCP and a perfect candidate for streaming services.
 </b></details>
 
 <details>
-<summary>Explain "default gateway"</summary><br><b>
+<summary>True or False? TCP is better than UDP</summary><br><b>
 </b></details>
 
 <details>
-<summary>How TCP works? What is the 3 way handshake?</summary><br><b>
+<summary>What TCP/IP protocols are you familiar with?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Explain "default gateway"</summary><br><b>
 </b></details>
 
 <details>
@@ -707,6 +751,18 @@ TCP establishes a connection between the client and the server to guarantee the 
 <summary>What is NAT? How it works?</summary><br><b>
 </b></details>
 
+<details>
+<summary>What is latency?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is bandwidth?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Which factors affect network performances</summary><br><b>
+</b></details>
+
 <a name="network-advanced"></a>
 #### :star: Advanced
 
@@ -747,6 +803,14 @@ TCP establishes a connection between the client and the server to guarantee the 
 </b></details>
 
 <details>
+<summary>What is Network Congestion? What can cause it?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What can you tell me about UDP packet format? What about TCP packet format? How is it different?</summary><br><b>
+</b></details>
+
+<details>
 <summary>Using Hamming code, what would be the code word for the following data word 100111010001101?</summary><br><b>
 
 00110011110100011101
@@ -758,7 +822,9 @@ TCP establishes a connection between the client and the server to guarantee the 
 #### :baby: Beginner
 
 <details>
-<summary>What is your experience with Linux? When you can set up an application on multiple operating systems, on which one would you prefer to set it up and why?</summary><br><b>
+<summary>What is your experience with Linux?</summary><br><b>
+
+An open question. Answer based on your real experience.
 </b></details>
 
 <details>
@@ -781,7 +847,22 @@ TCP establishes a connection between the client and the server to guarantee the 
 
 <details>
 <summary>Running the command <code>df</code> you get "command not found". What could be wrong and how to fix it?</summary><br><b>
-</b></details>
+</b>
+<p><b>
+Most likely the default/generated $PATH was somehow modified or overridden thus not containing <code>/bin/</code> where df would normally go.
+This issue could also happen if bash_profile or any configuration file of your interpreter was wrongly modified, causing erratics behaviours.
+You would solve this by fixing your $PATH variable:
+
+As to fix it there are serveral options:
+
+1. Manually adding what you need to your $PATH <code>PATH="$PATH":/user/bin:/..etc</code> 
+2. You have your weird env variables backed up.
+3. You would look for your distro default $PATH variable, copy paste using method #1
+
+Note: There are many ways of getting errors like this: if bash_profile or any configuration file of your interpreter was wrongly modified; causing erratics behaviours,
+permissions issues, bad compiled software (if you compiled it by yourself)... there is no answer that will be true 100% of the time.</b>
+</p>
+</details>
 
 <details>
 <summary>How to make sure a service will start on a OS of your choice?</summary><br><b>
@@ -793,16 +874,20 @@ TCP establishes a connection between the client and the server to guarantee the 
 You can use the commands <code>cron</code> and <code>at</code>.
 With cron, tasks are scheduled using the following format:
 
+<code>*/30 * * * * bash myscript.sh</code> Executes the script every 30 minutes.
+
 <minute> <hour> <day of month> <month> <day of week> <command to execute>
 
-The tasks are stored in a cron file.
+The tasks are stored in a cron file, you can write in it using <code>crontab -e</code>
+
+Alternatively if you are using a distro with systemd it's recommended to use systemd timers.
+
 </b></details>
 
 <details>
 <summary>Have you scheduled tasks in the past? What kind of tasks?</summary><br><b>
 
 Normally you will schedule batch jobs.
-
 </b></details>
 
 ##### Permissions
@@ -821,9 +906,11 @@ Using the `chmod` command.
   * 644
   * 750</summary><br><b>
 
-777 - means you are lazy
-644 - owner has read+write permissions and everyone else can only read
-750 - owner can do anything, group can read and execute and others can do nothing
+<pre>
+777 - You give the owner, group and other: Execute (1), Write (2) and Read (4); 4+2+1 = 7.
+644 - Owner has Read (4), Write (2), 4+2 = 6; Group and Other have Read (4).
+750 - Owner has x+r+w, Group has Read (4) and Execute (1); 4+1 = 5. Other have no permissions.
+</pre>
 </b></details>
 
 <details>
@@ -838,13 +925,32 @@ Using the `chmod` command.
 </b></details>
 
 <details>
-<summary>What is systemd?</summary><br><b>
+<summary>What is systemd?</summary><br>
+<b>
+Systemd is a daemon (System 'd', d stands from daemon).
+
+A daemon is a program that runs in the background without direct control of the user, although the user can at any time
+talk to the daemon.
+
+systemd has many features such as user processes control/tracking, snapshot support, inhibitor locks..
+
+
+If we visualize the unix/linux system in layers, systemd would fall directly after the linux kernel.
+
+Hardware -> Kernel -> <u>Daemons</u>, System Libraries, Server Display.
+
+
+</b>
+</details>
+
+<details>
+<summary>On a system which uses systemd, how would you display the logs?</summary><br><b>
+
+<code>journalctl</code>
 </b></details>
 
 <details>
-<summary>On a system which uses systemd, how would display the logs?</summary>
-
-<code>journalctl</code>
+<summary>Describe how to make a certain process/app a service</summary><br><b>
 </b></details>
 
 ##### Debugging
@@ -902,6 +1008,10 @@ Using the `chmod` command.
 </b></details>
 
 <details>
+<summary>What is SSH key? How is it used?</summary><br><b>
+</b></details>
+
+<details>
 <summary>What is the difference between SSH and SSL?</summary><br><b>
 SSL is an authentication method
 SSH is remote access to a VM/machine 
@@ -935,7 +1045,9 @@ ls -al test-*.txt
 </b></details>
 
 <details>
-<summary>Tell me everything you know about Linux boot process</summary><br><b>
+<summary>Tell me everything you know about the Linux boot process</summary><br><b>
+
+Another way to ask this: what happens from the moment you turned on the server until you get a prompt
 </b></details>
 
 <details>
@@ -948,6 +1060,19 @@ parent process.
 Each number has different meaning, based on how the application was developed.
 
 I consider this as a good blog post to read more about it: https://shapeshed.com/unix-exit-codes
+</b></details>
+
+##### Storage, Filesystem
+
+<details>
+<summary>What's an inode?</summary><br><b>
+
+For each file (and directory) in Linux there is an inode, a data structure which stores meta data
+related to the file like its size, owner, permissions, etc.
+</b></details>
+
+<details>
+<summary>How to check which disks are currently mounted?</summary><br><b>
 </b></details>
 
 <details>
@@ -969,6 +1094,10 @@ Soft links can be created between different file systems while hard link can be 
 
 <details>
 <summary>You are trying to create a new file but you get "File system is full". You check with df for free space and you see you used only 20% of the space. What could be the problem?</summary><br><b>
+</b></details>
+
+<details>
+<summary>How would you check what is the size of a certain directory?</summary><br><b>
 </b></details>
 
 <details>
@@ -999,8 +1128,13 @@ Soft links can be created between different file systems while hard link can be 
 <summary>Fix the following commands:
 
   * sed "s/1/2/g' /tmp/myFile
-  * find . -iname \*.yaml -exec sed -i "s/1/2/g" {} ;</summary><br><b>
-</b></details>
+  * find . -iname \*.yaml -exec sed -i "s/1/2/g" {} ;
+  
+  </summary><br><b>
+</b>
+<code>sed 's/1/2/g' /tmp/myFile</code><br>
+<code> find . -iname "*.yaml" -exec sed -i "s/1/2/g" {} \; </code>
+</details>
 
 <details>
 <summary>Explain what is stored in each of the following paths and if there is anything unique about it:</summary><br><b>
@@ -1012,11 +1146,13 @@ Soft links can be created between different file systems while hard link can be 
   * /usr/local
 </b></details>
 
-<details>
-<summary>What is chroot?</summary><br><b>
-</b></details>
-
 ##### Processes
+
+<details>
+<summary>Can you explain what is a process?</summary><br><b>
+
+A process is a running program. A program is one or more instructions and the program (or process) is executed by the operating system.
+</b></details>
 
 <details>
 <summary>How to run a process in the background and why to do that in the first place?</summary><br><b>
@@ -1031,11 +1167,12 @@ execution or run forever
 </b></details>
 
 <details>
-<summary>What signal is used when you run 'kill <process id>'?</summary><br><b>
-
+<summary>What signal is used by default when you run 'kill <process id>'?</summary><br><b>
+<pre>
 The default signal is SIGTERM (15). This signal kills
 process gracefully which means it allows it to save current
 state configuration.
+</pre>
 </b></details>
 
 <details>
@@ -1062,16 +1199,28 @@ To view all available signals run `kill -l`
 
 <details>
 <summary>What are the possible states of a process in Linux?</summary><br><b>
-
-Running
-Waiting
-Stopped
-Terminated
-Zombie
+<pre>
+Running (R)
+Uninterruptible Sleep (D) - The process is waiting for I/O
+Interruptible Sleep (S)
+Stopped (T)
+Dead (x)
+Zombie (z)
+</pre>
 </b></details>
 
 <details>
-<summary>What is a zombie process? How do you get rid of it?</summary>
+<summary>What is a zombie process?</summary><br><b>
+</b></details>
+
+<details>
+<summary>How to get rid of zombie processes?</summary><br><b>
+
+You can't kill a zombie process the regular way with `kill -9` for example as it's already dead.
+
+One way to kill zombie process is by sending SIGCHLD to the parent process telling it to terminate its child processes. This might not work if the parent process wasn't programmed properly. The invocation is `kill -s SIGCHLD [parent_pid]`
+
+You can also try closing/terminating the parent process. This will make the zombie process a child of init (1) which does periodic cleanups and will at some point clean up the zombie process.
 </b></details>
 
 <details>
@@ -1126,22 +1275,17 @@ This is a great article on the topic: https://www.computerhope.com/jargon/f/file
 </b></details>
 
 <details>
-<summary>What's an inode?</summary><br><b>
-
-For each file (and directory) in Linux there is an inode, a data structure which stores meta data
-related to the file like its size, owner, permissions, etc.
-</b></details>
-
-<details>
-<summary>How to list active connections?</summary><br><b>
-</b></details>
-
-<details>
 <summary>What is NTP? What is it used for?</summary><br><b>
 </b></details>
 
 <details>
 <summary>Explain Kernel OOM</summary><br><b>
+</b></details>
+
+##### Security
+
+<details>
+<summary>What is chroot? In what scenarios would you consider using it?</summary><br><b>
 </b></details>
 
 <details>
@@ -1181,6 +1325,11 @@ related to the file like its size, owner, permissions, etc.
   * HTTP
   * DNS
   * HTTPS</summary><br><b>
+
+  * SSH - 22
+  * HTTP - 80
+  * DNS - 53
+  * HTTPS - 443
 </b></details>
 
 <details>
@@ -1191,32 +1340,23 @@ related to the file like its size, owner, permissions, etc.
 <summary>What are packet sniffers? Have you used one in the past? If yes, which packet sniffers have you used and for what purpose?</summary><br><b>
 </b></details>
 
-##### DNS
-
 <details>
-<summary>What is DNS? Why do we need it?</summary><br><b>
+<summary>How to list active connections?</summary><br><b>
 </b></details>
+
+##### Linux DNS
 
 <details>
 <summary>What the file <code>/etc/resolv.conf</code> is used for? What does it include?</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is a "A record"?</summary><br><b>
-</b></details>
+<summary>What commands are you using for performing DNS queries (or troubleshoot DNS related issues)?</summary><br><b>
 
-<details>
-<summary>What is a PTR record?</summary><br><b>
+You can specify one or more of the following:
 
-While an A record points a domain name to an IP address, a PTR record does the opposite and resolves the IP address to a domain name.
-</b></details>
-
-<details>
-<summary>What is a MX record?</summary><br><b>
-</b></details>
-
-<details>
-<summary>Is DNS using TCP or UDP?</summary><br><b>
+ * <code>dig</code>
+ * <code>nslookup</code>
 </b></details>
 
 ##### Packaging
@@ -1319,6 +1459,10 @@ These system calls are reading the file <code>/my/file</code> and 5 is the file 
 <summary>What is the difference between a process and a thread?</summary><br><b>
 </b></details>
 
+<details>
+<summary>You found there is a server with high CPU load but you didn't find a process with high CPU. How is that possible?</summary><br><b>
+</b></details>
+
 ##### Network
 
 <details>
@@ -1327,6 +1471,8 @@ These system calls are reading the file <code>/my/file</code> and 5 is the file 
 
 <details>
 <summary>What <code>traceroute</code> command does? How it works?</summary><br><b>
+
+Another common way to task this questions is "what part of the tcp header does traceroute modify?"
 </b></details>
 
 <details>
@@ -1338,7 +1484,7 @@ These system calls are reading the file <code>/my/file</code> and 5 is the file 
 </b></details>
 
 <details>
-<summary>What are cgroups? In what scenario would you use them?</summary><br><b>
+<summary>What are cgroups?</summary><br><b>
 </b></details>
 
 <details>
@@ -1377,6 +1523,53 @@ This is a good article about the topic: https://ops.tips/blog/how-linux-creates-
 <summary>You executed a script and while still running, it got accidentally removed. Is it possible to restore the script while it's still running?</summary><br><b>
 </b></details>
 
+## Operating System
+
+<a name="operating-system-beginner"></a>
+#### :baby: Beginner
+
+<details>
+<summary>What is an operating system?</summary><br><b>
+
+There are many ways to answer that. For those who look for simplicity, the book "Operating Systems: Three Easy Pieces" offers nice version:
+
+"responsible for making it easy to run programs (even allowing you to seemingly run many at the same time), allowing programs to share memory, enabling programs to interact with devices, and other fun stuff like that"
+</b></details>
+
+<details>
+<summary>If you had to design an API for processes in an operating system, what would this API look like?</summary><br><b>
+
+* Create - allow to create new processes 
+* Delete - allow to remove/destroy processes
+* State - allow to check the state of the process, whether it's running, stopped, waiting, etc.
+* Stop - allow to stop a running process
+</b></details>
+
+<details>
+<summary>How a process is created?</summary><br><b>
+</b></details>
+
+## Virtualization
+
+<a name="virtualization-beginner"></a>
+#### :baby: Beginner
+
+<details>
+<summary>Explain what is Virtualization</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is "time sharing"?</summary><br><b>
+
+Even when using a system with one physical CPU, it's possible to allow multiple users to work on it and run programs. This is possible with time sharing where computing resources are shared in a way it seems to the user the system has multiple CPUs but in fact it's simply one CPU shared by applying multiprogramming and multi-tasking.
+</b></details>
+
+<details>
+<summary>What is "space sharing"?</summary><br><b>
+
+Somewhat the opposite of time sharing. While in time sharing a resource is used for a while by one entity and then the same resource can be used by another resource, in space sharing the space is shared by multiple entities but in a way it's not being transfered between them.<br>
+It's used by one entity until this entity decides to get rid of it. Take for example storage. In storage, a file is your until you decide to delete it.
+</b></details>
 
 ## Ansible
 
@@ -1582,6 +1775,38 @@ def cap(self, string):
 <summary>What are callback plugins? What can you achieve by using callback plugins?</summary><br><b>
 </b></details>
 
+<details>
+<summary>File '/tmp/exercise' includes the following content
+
+```
+Goku = 9001
+Vegeta = 5200
+Trunks = 6000
+Gotenks = 32
+```
+
+With one task, switch the content to:
+
+```
+Goku = 9001
+Vegeta = 250
+Trunks = 40
+Gotenks = 32
+```
+</summary><br><b>
+
+```
+- name: Change saiyans levels
+  lineinfile:
+    dest: /tmp/exercise
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+  with_items:
+    - { regexp: '^Vegeta', line: 'Vegeta = 250' }
+    - { regexp: '^Trunks', line: 'Trunks = 40' }
+    ...
+```
+</b></details>
 
 ## Terraform
 
@@ -1625,8 +1850,12 @@ The benefits of Terraform over the other tools:
 <summary>Explain each of the following:
 
   * Provider
-  * Resource
-  * Provisioner
+  * Resource 
+  * Provisioner 
+</summary><br><b>
+  * Provider is any cloud based technology - github, aws, postgresql etc - which one can make an API call to with its unique terraform provider binary to provision available services and components.<br>  
+  * Resources are the services and components you provision on these platforms.<br>
+  * Provisioner in terraform's lingo specifically refers to configuration tools like ansible or salt-stack which are used in combination with terraform to orchestrate a system.
 </b></details>
 
 <details>
@@ -1638,10 +1867,10 @@ It keeps track of the IDs of created resources so that Terraform knows what it i
 <details>
 <summary>Explain what the following commands do:
 
-  * <code>terraform init</code>
-  * <code>terraform plan</code>
-  * <code>terraform validate</code>
-  * <code>terraform apply</code>
+  * <code>terraform init</code> 
+  * <code>terraform plan</code>	
+  * <code>terraform validate</code> 
+  * <code>terraform apply</code> 
 </summary><br><b>
 
 <code>terraform init</code> scans your code to figure which providers are you using and download them.
@@ -1712,14 +1941,20 @@ List
 
 <details>
 <summary>Explain "Remote State". When would you use it and how?</summary><br><b>
+  Terraform generates a `terraform.tfstate` json file that describes components/service provisioned on the specified provider. Remote  
+  State stores this file in a remote storage media to enable collaboration amongst team.
 </b></details>
 
 <details>
 <summary>Explain "State Locking"</summary><br><b>
+  State locking is a mechanism that blocks an operations against a specific state file from multiple callers so as to avoid conflicting   operations from different team members. Once the first caller's operation's lock is released the other team member may go ahead to   
+  carryout his own operation. Nevertheless Terraform will first check the state file to see if the desired resource already exist and 
+  if not it goes ahead to create it.
 </b></details>
 
 <details>
 <summary>What is the "Random" provider? What is it used for</summary><br><b>
+ The random provider aids in generating numeric or alphabetic characters to use as a prefix or suffix for a desired named identifier.
 </b></details>
 
 ## Docker
@@ -1958,6 +2193,21 @@ Kubernetes is especially good for scenarios when you no longer running small num
 Describes the bounds of an algorithm with regards to space/complexity  
 </b></details>
 
+##### Common algorithms
+
+<details>
+<summary>Binary search:
+  * How it works?
+  * Can you implement it? (in any language you prefer)
+  * What is the average performance of the algorithm you wrote?</summary><br><b>
+
+It's a search algorithm used with sorted arrays/lists to find a target value by dividing the array each iteration and comparing the middle value to the target value. If the middle value is smaller than target value, then the target value is searched in the right part of the divided array, else in the left side. This continues until the value is found (or the array divided max times) 
+
+[python implementation](coding/python/binary_search.py)
+
+The average performance of the above algorithm is O(log n). Best performance can be O(1) and worst O(log n).
+</b></details>
+
 ##### Code Review
 
 <details>
@@ -1982,11 +2232,62 @@ Describes the bounds of an algorithm with regards to space/complexity
 <summary>In any language you want, write a function to determine if two strings are Anagrams </summary><br><b>
 </b></details>
 
+##### Time Complexity
+
+<details>
+<summary>Describe what would be the time complexity of the operations <code>access</code>, <code>search</code> <code>insert</code> and <code>remove</code> for the following data structures:</summary><br><b>
+
+  * Stack
+  * Queue
+  * Linked List
+  * Binary Search Tree
+</b></details>
+
+<details>
+<summary>What is the complexity for the best, worst and average cases of each of the following algorithms?:
+
+  * Quick sort
+  * Merge sort
+  * Bucket Sort
+  * Radix Sort</summary><br><b>
+</b></details>
+
+##### Data Structures & Types
+
+<details>
+<summary>Implement Stack in any language you would like</summary><br><b>
+</b></details>
+
+<details>
+<summary>Implement Hash table in any language you would like</summary><br><b>
+</b></details>
+
 <a name="coding-advanced"></a>
 #### :star: Advanced
 
 <details>
 <summary>Name 3 design patterns. Do you know how to implement (= provide an example) these design pattern in any language you'll choose?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Given an array/list of integers, find 3 integers which are adding up to 0 (in any language you would like)</summary><br><b>
+
+```
+def find_triplets_sum_to_zero(li):
+    li = sorted(li)
+    for i, val in enumerate(li):
+        low, up = 0, len(li)-1
+        while low < i < up:
+            tmp = var + li[low] + li[up]
+            if tmp > 0:
+                up -= 1
+            elif tmp < 0:
+                low += 1
+            else:
+                yield li[low], val, li[up]
+                low += 1
+                up -= 1
+```
 </b></details>
 
 ## Python
@@ -2186,6 +2487,10 @@ Generally, every compiling process have a two steps.
 </b></details>
 
 <details>
+<summary>What <code>//</code> is used for?</summary><br><b>
+</b></details>
+
+<details>
 <summary>Write a program which will revert a string (e.g. pizza -> azzip)</summary><br><b>
 
 ```
@@ -2241,12 +2546,57 @@ def return_sum():
 <details>
 <summary>How do you swap values between two variables?</summary><br><b>
 
+```
 x, y = y, x
+```
+
 </b></details>
 
 <details>
-<summary>How to check if all the elements in a given lists are unique? so [1, 2, 3] is unique but [1, 1, 2, 3] is not unique but we 1 twice</summary><br><b>
-</b></details>
+<summary>How to check if all the elements in a given lists are unique? so [1, 2, 3] is unique but [1, 1, 2, 3] is not unique because 1 exists twice</summary><br><b>
+</b>
+
+There are many ways of solving this problem:<br>
+<code># Note: :list and -> bool are just python typings, they are not needed for the correct execution of the algorithm. </code>
+
+Taking advantage of sets and len:
+
+```
+def is_unique(l:list) -> bool:
+    return len(set(l)) == len(l)
+```
+
+This one is can be seen used in other programming languages.
+
+```
+def is_unique2(l:list) -> bool:
+    seen = []
+
+    for i in l:
+        if i in seen:
+            return False
+        seen.append(i)
+    return True
+```
+
+Here we just count and make sure every element is just repeated once.
+
+```
+def is_unique3(l:list) -> bool:
+    for i in l:
+        if l.count(i) > 1:
+            return False
+    return True
+```
+
+This one might look more convulated but hey, one liners.
+
+```
+def is_unique4(l:list) -> bool:
+    return all(map(lambda x: l.count(x) < 2, l))
+```
+
+</details>
 
 <details>
 <summary>What _ is used for in Python?</summary><br><b>
@@ -2260,10 +2610,16 @@ x, y = y, x
 <summary>How to check how much time it took to execute a certain script or block of code?</summary><br><b>
 </b></details>
 
-##### Algorithms Implementation
+<details>
+<summary>Find all the permutations of a given string</summary><br><b>
+</b></details>
+
+##### Common Algorithms Implementation
 
 <details>
 <summary>Can you implement "binary search" in Python?</summary><br><b>
+
+[Solution](coding/python/binary_search.py)
 </b></details>
 
 ##### Files
@@ -2281,6 +2637,10 @@ with open('file.txt', 'w') as file:
 <summary>How to reverse a file?</summary><br><b>
 --memory concerns for large files 
 https://stackoverflow.com/questions/2301789/read-a-file-in-reverse-order-using-python
+</b></details>
+
+<details>
+<summary>Sum all the integers in a given file</summary><br><b>
 </b></details>
 
 #### Regex
@@ -2386,6 +2746,10 @@ https://realpython.com/python-gil/
 </b></details>
 
 <details>
+<summary>What is an iterator?</summary><br><b>
+</b></details>
+
+<details>
 <summary>What is a generator? Why using generators?</summary><br><b>
 </b></details>
 
@@ -2412,27 +2776,97 @@ perhaps would need to chunk, reverse, then join for larger lists
 </b></details>
 
 <details>
+<summary>Explain the following:
+  * zip()
+  * map()
+  * filter()</summary><br><b>
+</b></details>
+
+<details>
+<summary>How do you debug Python code?</summary><br><b>
+</b></details>
+
+<details>
 <summary>What empty <code>return</code> returns?</summary><br><b>
-</b></details>
+</b>
 
-##### Time Complexity
+Short answer is: It returns a None object.
+
+We could go a bit deeper and explain the difference between 
+
+```
+def a ():
+    return
+    
+>>> None
+```
+
+And
+
+```
+def a ():
+    pass
+    
+>>> None
+```
+Or we could be asked this as a following question, since they both give the same result.
+
+We could use the dis module to see what's going on:
+
+```
+  2           0 LOAD_CONST               0 (<code object a at 0x0000029C4D3C2DB0, file "<dis>", line 2>)
+              2 LOAD_CONST               1 ('a')
+              4 MAKE_FUNCTION            0
+              6 STORE_NAME               0 (a)
+
+  5           8 LOAD_CONST               2 (<code object b at 0x0000029C4D3C2ED0, file "<dis>", line 5>)
+             10 LOAD_CONST               3 ('b')
+             12 MAKE_FUNCTION            0
+             14 STORE_NAME               1 (b)
+             16 LOAD_CONST               4 (None)
+             18 RETURN_VALUE
+
+Disassembly of <code object a at 0x0000029C4D3C2DB0, file "<dis>", line 2>:
+  3           0 LOAD_CONST               0 (None)
+              2 RETURN_VALUE
+
+Disassembly of <code object b at 0x0000029C4D3C2ED0, file "<dis>", line 5>:
+  6           0 LOAD_CONST               0 (None)
+              2 RETURN_VALUE
+```
+
+An empty <code> return</code> is exactly the same as <code>return None</code> and functions without any explicit return
+will always return None regardless of the operations, therefore 
+
+
+```
+def sum(a, b):
+    global c
+    c = a + b
+    
+>>> None
+```
+
+</details>
+
+##### Data Structures & Types
 
 <details>
-<summary>Describe what would be the time complexity of the operations <code>access</code>, <code>search</code> <code>insert</code> and <code>remove</code> for the following data structures:</summary><br><b>
-
-  * Stack
-  * Queue
-  * Linked List
-  * Binary Search Tree
+<summary>Implement Stack in Python</summary><br><b>
 </b></details>
 
 <details>
-<summary>What is the complexity for the best, worst and average cases of each of the following algorithms?:
+<summary>Implement Hash table in Python</summary><br><b>
+</b></details>
 
-  * Quick sort
-  * Merge sort
-  * Bucket Sort
-  * Radix Sort
+##### Tests
+
+<details>
+<summary>What is your experience with writing tests in Python?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Explain mocks</summary><br><b>
 </b></details>
 
 <a name="python-advanced"></a>
@@ -2440,18 +2874,145 @@ perhaps would need to chunk, reverse, then join for larger lists
 
 <details>
 <summary>Explain what is a decorator</summary><br><b>
-</b></details>
+</b>
+<b>In python, everything is an object, even functions themselves. Therefore you could pass functions as arguments
+for another function eg;
+
+```
+def wee(word):
+    return word
+
+def oh(f):
+    return f + "Ohh"
+    
+>>> oh(wee("Wee"))
+<<< Wee Ohh
+```
+
+This allows us to control the before execution of any given function and if we added another function as wrapper,
+(a function receiving another function that receives a function as parameter) we could also control the after execution.
+
+Sometimes we want to control the before-after execution of many functions and it would get tedious to write
+
+<code> f = function(function_1())</code>
+<code> f = function(function_1(function_2(*args)))</code>
+
+every time, that's what decorators do, they introduce syntax to write all of this on the go, using the keyword '@'.
+</b>
+</details>
 
 <details>
 <summary>Can you show how to write and use decorators?</summary><br><b>
-</b></details>
 
+<code>
+These two decorators (ntimes and timer) are usually used to display decorators functionalities, you can find them in lots of
+tutorials/reviews. I first saw these examples two years ago in pyData 2017. https://www.youtube.com/watch?v=7lmCu8wz8ro&t=3731s</code>
+
+```
+Simple decorator:
+
+def deco(f):
+    print(f"Hi I am the {f.__name__}() function!")
+    return f
+
+@deco
+def hello_world():
+    return "Hi, I'm in!"
+
+a = hello_world()
+print(a)
+
+>>> Hi I am the hello_world() function!
+    Hi, I'm in!
+```
+
+This is the simplest decorator version, it basically saves us from writting <code>a = deco(hello_world())</code>.
+But at this point we can only control the before execution, let's take on the after:
+
+```
+def deco(f):
+    def wrapper(*args, **kwargs):
+        print("Rick Sanchez!")
+        func = f(*args, **kwargs)
+        print("I'm in!")
+        return func
+    return wrapper
+
+@deco
+def f(word):
+    print(word)
+
+a = f("************")
+>>> Rick Sanchez!
+    ************
+    I'm in!
+```
+
+deco receives a function -> f
+wrapper receives the arguments -> *args, **kwargs
+
+wrapper returns the function plus the arguments -> f(*args, **kwargs)
+deco returns wrapper.
+
+As you can see we conveniently do things before and after the execution of a given function.
+
+For example, we could write a decorator that calculates the execution time of a function.
+
+```
+import time
+def deco(f):
+    def wrapper(*args, **kwargs):
+        before = time.time()
+        func = f(*args, **kwargs)
+        after = time.time()
+        print(after-before)
+        return func
+    return wrapper
+
+@deco
+def f():
+    time.sleep(2)
+    print("************")
+
+a = f()
+>>> 2.0008859634399414
+```
+
+Or create a decorator that executes a function n times.
+
+```
+def n_times(n):
+    def wrapper(f):
+        def inner(*args, **kwargs):
+            for _ in range(n):
+                func = f(*args, **kwargs)
+            return func
+        return inner
+    return wrapper
+
+@n_times(4)
+def f():
+    print("************")
+
+a = f()
+
+>>>************
+   ************
+   ************
+   ************
+```
+
+</b></details>
 <details>
 <summary>Write a script which will determine if a given host is accessible on a given port</summary><br><b>
 </b></details>
 
 <details>
 <summary>Are you familiar with Dataclasses? Can you explain what are they used for?</summary><br><b>
+</b></details>
+
+<details>
+<summary>You wrote a class to represent a car. How would you compare two cars instances if two cars are equal if they have the same model and color?</summary><br><b>
 </b></details>
 
 <details>
@@ -2475,6 +3036,10 @@ Selineum
 
 <details>
 <summary>Can you implement Linked List in Python?<br><b>
+</b></details>
+
+<details>
+<summary>Can you implement Linux's <code>tail</code> command in Python? Bonus: implement <code>head</code> as well</summary><br><b>
 </b></details>
 
 <details>
@@ -3324,7 +3889,7 @@ the pseudo table to retrieve the sum of the prices spent by each customer, then 
 </b></details>
 
 <details>
-<summary>What components and services exist in L2 and L3?</summary><br><b>
+<summary>What components and services exist for L2 and L3?</summary><br><b>
 </b></details>
 
 <details>
@@ -3344,6 +3909,10 @@ the pseudo table to retrieve the sum of the prices spent by each customer, then 
 </b></details>
 
 <details>
+<summary>What networking entities Neutron supports?</summary><br><b>
+</b></details>
+
+<details>
 <summary>How do you debug OpenStack networking issues? (tools, logs, ...)</summary><br><b>
 </b></details>
 
@@ -3355,6 +3924,11 @@ the pseudo table to retrieve the sum of the prices spent by each customer, then 
 <details>
 <summary>Explain BGP dynamic routing</summary>
 </b></details>
+
+<details>
+<summary>What is the role of network namespaces in OpenStack?</summary>
+</b></details>
+
 
 ## Security
 
@@ -3445,7 +4019,7 @@ the UI to a db doesn't have the safe guards around the user sending in a malicio
 </b></details>
 
 <details>
-<summary>Do you think open source project is more secured when compared to a proprietary software?</summary><br><b>
+<summary>What is DNS Spoofing? How to prevent it?</summary><br><b>
 </b></details>
 
 <details>
@@ -3563,6 +4137,255 @@ printf can leak program memory information when used with specific flags
 <summary>Explain what is Hiera</summary><br><b>
 </b></details>
 
+## Elastic
+
+<a name="elastic-beginner"></a>
+#### :baby: Beginner
+
+<details>
+<summary>What is the Elastic Stack?</summary><br><b>
+
+The Elastic Stack consists of:
+
+  * Elasticsearch
+  * Elastic Hadoop
+  * Kibana
+  * Logstash
+  * Beats
+  * APM Server
+
+The most used projects are the Elasticserach, Logstash and Kibana. Also known as the ELK stack.
+</b></details>
+
+<details>
+<summary>Describe what happens from the moment the app logged some information until it's displayed to the user in the dashboard when the Elastic stack is used</summary><br><b>  
+
+1. The data logged by the application is sent to Elasticsearch
+2. Elasticsearch stores the document it got and the document is indexed for quick future access
+3. Logstash processes the data
+4. The user creates visualizations which uses the index in elasticsearch and more specifically the data there (this is done in Kibana).
+5. The user creates a dashboard which composed out of the visualization created earlier
+</b></details>
+
+##### Elasticsearch
+
+<details>
+<summary>Explain what is Elasticsearch</summary><br><b>
+
+From the official [docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/documents-indices.html):
+
+"Elasticsearch is a distributed document store. Instead of storing information as rows of columnar data, Elasticsearch stores complex data structures that have been serialized as JSON documents"
+</b></details>
+
+<details>
+<summary>What is an Index?</summary><br><b>
+
+Index in Elastic is in most cases compared to a whole database from the SQL/NoSQL world.<br>
+You can choose to have one index to hold all the data of your app or have multiple indices where each index holds different type of your app (e.g. index for each service your app is running).
+
+The official docs also offer a great explanation (in general, it's really good documentation, as every project should have):
+
+"An index can be thought of as an optimized collection of documents and each document is a collection of fields, which are the key-value pairs that contain your data"
+</b></details>
+
+<details>
+<summary>What is an Inverted Index?</summary><br><b>
+
+From the official docs:
+
+"An inverted index lists every unique word that appears in any document and identifies all of the documents each word occurs in."
+</b></details>
+
+<details>
+<summary>What is a Document?</summary><br><b>
+
+Continuing with the comparison to SQL/NoSQL a Document in Elastic is a row in table in the case of SQL or a document in a collection in the case of NoSQL.
+As in NoSQL a Document is a JSON object which holds data on a unit in your app. What is this unit depends on the your app. If your app related to book then each document describes a book. If you are app is about shirts then each document is a shirt.
+</b></details>
+
+<details>
+<summary>True or False? Elasticsearch indexes all data in every field and each indexed field has the same data structure for unified and quick query ability</summary><br><b>
+
+False.
+
+From the official docs:
+
+"Each indexed field has a dedicated, optimized data structure. For example, text fields are stored in inverted indices, and numeric and geo fields are stored in BKD trees."
+</b></details>
+
+<details>
+<summary>What reserved fields a document has?</summary><br><b>
+
+  * _index
+  * _id
+  * _type
+</b></details>
+
+<details>
+<summary>Explain Mapping</summary><br><b>
+</b></details>
+
+<details>
+<summary>What are the advantages of defining your own mapping? (or: when would you use your own mapping?)</summary><br><b>
+
+* You can optimize fields for partial matching
+* You can define custom formats of known fields (e.g. date)
+* You can perform language-specific analysis
+</b></details>
+
+<details>
+<summary>Explain Shards</summary><br><b>
+</b></details>
+
+<details>
+<summary>Explain Replicas</summary><br><b>
+</b></details>
+
+##### Query DSL
+
+<details>
+<summary>Explain Elasticsearch query syntax (Booleans, Fields, Ranges)</summary><br><b>
+</b></details>
+
+<details>
+<summary>Explain what is Relevance Score</summary><br><b>
+</b></details>
+
+<details>
+<summary>Explain Query Context and Filter Context</summary><br><b>
+
+From the official docs:
+
+"In the query context, a query clause answers the question “How well does this document match this query clause?” Besides deciding whether or not the document matches, the query clause also calculates a relevance score in the _score meta-field."
+
+"In a filter context, a query clause answers the question “Does this document match this query clause?” The answer is a simple Yes or No — no scores are calculated. Filter context is mostly used for filtering structured data"
+</b></details>
+
+##### Logstash
+
+<details>
+<summary>What are Logstash plugins? What plugins types are there?</summary><br><b>
+
+  * Input Plugins - how to collect data from different sources
+  * Filter Plugins - processing data
+  * Output Plugins - push data to different outputs/services/platforms
+</b></details>
+
+<details>
+<summary>What are Logstash Codecs?</summary><br><b>
+</b></details>
+
+##### Kibana
+
+<details>
+<summary>What is Kibana?</summary><br><b>
+
+From the official docs:
+
+"Kibana is an open source analytics and visualization platform designed to work with Elasticsearch. You use Kibana to search, view, and interact with data stored in Elasticsearch indices. You can easily perform advanced data analysis and visualize your data in a variety of charts, tables, and maps."
+</b></details>
+
+<details>
+<summary>What visualization types are supported/included in Kibana?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What visualization type would you use for statistical outliers</summary><br><b>
+</b></details>
+
+<details>
+<summary>Describe in detail how do you create a dashboard in Kibana</summary><br><b>
+</b></details>
+
+##### Beats
+
+<details>
+<summary>What is Filebeat?</summary><br><b>
+</b></details>
+
+<a name="elastic-advanced"></a>
+#### :star: Advnaced
+
+<details>
+<summary>Describe how would an architecture of production environment with large amounts of data would be different from a small-scale environment</summary><br><b>
+
+There are several possible answers for this question. One of them is as follows:
+
+A small-scale architecture of elastic will consist of the elastic stack as it is. This means we will have beats, logstash, elastcsearch and kibana.<br>
+A production environment with large amounts of data can include some kind of buffering component (e.g. Reddis or RabbitMQ) and also security component such as Nginx.
+</b></details>
+
+## DNS
+
+<a name="dns-beginner"></a>
+#### :baby: Beginner
+
+<details>
+<summary>What is DNS? What is it used for?</summary><br><b>
+
+DNS (Domain Name Systems) is a protocol used for converting domain names into IP addresses.<br>
+As you know computer networking is done with IP addresses (layer 3 of the OSI model) but for as humans it's hard to remember IP addresses, it's much easier to remember names. This why we need something such as DNS to convert any domain name we type into an IP address. You can think on DNS as a huge phonebook or database where each corresponding name has an IP.
+</b></details>
+
+<details>
+<summary>How DNS works?</summary><br><b>
+
+In general the process is as follows:
+
+  * The user types an address in the web browser (some_site.com)
+  * The operating system gets a request from the browser to translate the address the user entered
+  * A query created to check a local entry of the address exists in the system. In case it doesn't, the request is forwarded to the DNS resolver
+  * The Resolver is a server, usually configured by your ISP when you connect to the internet, that responsible for resolving your query by contacting other DNS servers
+  * The Resolver contacts the root nameserver (aka as .)
+  * The root nameserver responds with the address of the relevant Top Level Domain DNS server (if your address ends with org then the org TLD)
+  * The Resolver then contacts the TLD DNS and TLD DNS responds with the IP address that matches the address the user typed in the browser
+  * The Resolver passes this information to the browser
+  * The user is happy :D
+</b></details>
+
+<details>
+<summary>What types of DNS records are there?</summary><br><b>
+
+  * A
+  * PTR
+  * MX
+  * AAAA
+</b></details>
+
+<details>
+<summary>What is a A record?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is a AAAA record?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is a PTR record?</summary><br><b>
+
+While an A record points a domain name to an IP address, a PTR record does the opposite and resolves the IP address to a domain name.
+</b></details>
+
+<details>
+<summary>What is a MX record?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Is DNS using TCP or UDP?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is Round Robin DNS?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is DNS Record TTL? Why do we need it?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What is a zone? What types of zones are there?</summary><br><b>
+</b></details>
+
 ## General
 
 Although the following questions are not DevOps related, they are still quite common so it's better to prepare for them as well.
@@ -3576,7 +4399,59 @@ Although the following questions are not DevOps related, they are still quite co
 </b></details>
 
 <details>
+<summary>What was most challenging part in the project you worked on?</summary><br><b>
+</b></details>
+
+<details>
 <summary>Why do you want to work here?</summary><br><b>
+</b></details>
+
+<details>
+<summary>How did you hear about us?</summary><br><b>
+
+Tell them how did you hear about them :D
+</b></details>
+
+<details>
+<summary>How would you describe a good leadership? What makes a good boss for you?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Tell me about a time where you didn't agree on an implementation</summary><br><b>
+</b></details>
+
+<details>
+<summary>How do you deal with a situation where key stakeholders are not around and a big decision needs to be made? </summary><br><b>
+</b></details>
+
+<details>
+<summary>Give an example of a time you were able to change the view of a team about a particular tool/project/technology</summary><br><b>
+</b></details>
+
+<details>
+<summary>Have you ever caused a service outage? (or broke a working project, tool, ...?)</summary><br><b>
+</b></details>
+
+<details>
+<summary>Rank the following in order 1 to 5, where 1 is most important: salaray, benefits, career, team/people, work life balance</summary><br><b>
+
+Don't put salary in bottom or top.
+</b></details>
+
+<details>
+<summary>You have three important tasks scheduled for today. One is for your boss, second for a colleague who is also a friend, third is for a customer. All tasks are equally important. What do you do first?</summary><br><b>
+</b></details>
+
+<details>
+<summary>You have a colleague you don‘t get along with. Tell us some strategies how you create a good work relationship with them anyway.</summary><br><b>
+</b></details>
+
+<details>
+<summary>What do you love about your work?</summary><br><b>
+</b></details>
+
+<details>
+<summary>Why should we hire you for the role?</summary><br><b>
 </b></details>
 
 ## Questions you CAN ask
@@ -3622,6 +4497,9 @@ For Example, if they mention they have problem X, and you've solved that in the 
 you can show how you'd be able to mitigate that problem.
 </b></details>
 
+<details>
+<summary>Let's say that we agree and you hire me to this position, after X months, what do you expect that I have achieved?</summary><br><b>
+</b></details>
 
 ## Scenarios
 
@@ -3638,10 +4516,13 @@ Below you can find several scenario questions:
 * [Elasticsearch & Kibana on AWS](scenarios/elk_kibana_aws.md)
 * [Ansible, Minikube and Docker](scenarios/ansible_minikube_docker.md)
 * [Cloud Slack bot](scenarios/cloud_slack_bot.md)
-* [Writing Jenkins Scripts](scenarios/jenkins_scripts.md)
-* [Writing Jenkins Pipelines](scenarios/jenkins_pipelines.md)
+* [Jenkins: writing scripts](scenarios/jenkins_scripts.md)
+* [Jenkins: writing pipelines](scenarios/jenkins_pipelines.md)
+* [CI for open source project](scenarios/ci_for_open_source_project.md)
 
 ## Credits
+
+Thanks to all of our amazing [contributors](https://github.com/bregman-arie/devops-interview-questions/graphs/contributors) who make it easy for everyone to learn and prepare to their interviews.
 
 Logos credits can be found [here](credits.md)
 
