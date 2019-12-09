@@ -383,9 +383,9 @@ You can describe the UI way to add new slaves but better to explain how to do in
 <details>
 <summary>What types of Cloud Computing are there?</summary><br><b>
 
-IAAS
-PAAS
-SAAS
+IAAS - infrastructure (aws)
+PAAS - platform (heroku)
+SAAS - software (dropbox, google drive)
 </b></details>
 
 <details>
