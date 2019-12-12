@@ -418,6 +418,9 @@ Edge locations are basically content delivery network which caches data and insu
 
 <details>
 <summary>What is IAM?</summary><br><b>
+IAM - Identity and Acess Management
+A way to manage access and authorization for AWS resources. ie access groups 
+Admins, Read-Only 
 </b></details>
 
 ##### S3
@@ -465,10 +468,13 @@ True
 
 <details>
 <summary>What is EC2? What is it used for?</summary><br><b>
+EC2 stands for elastic compute instances. An entry point into the cloud compute ecosystem with VMs. 
 </b></details>
 
 <details>
 <summary>What EC2 pricing models are there?</summary><br><b>
+t2.micro
+
 </b></details>
 
 <details>
@@ -479,6 +485,8 @@ Stop the instance, the type of the instance to match the desired RAM and start t
 
 <details>
 <summary>What is an AMI?</summary><br><b>
+AMI - amazon machine image
+Image in which VMs are based and created 
 </b></details>
 
 <details>
@@ -548,7 +556,8 @@ Stop the instance, the type of the instance to match the desired RAM and start t
   * AWS Shield</summary><br><b>
 </b></details>
 
-<summary>What AWS VPN is usef for?</summary><br><b>
+<summary>What AWS VPN is used for?</summary><br><b>
+Managing network based acess for users within a security group. 
 </b></details>
 
 <summary>What is the difference between Site-to-Site VPN and Client VPN?</summary><br><b>
@@ -563,6 +572,7 @@ True
 
 <details>
 <summary>What is RDS?</summary><br><b>
+AWS distributed, highly-available, fault tolerant database solution. 
 </b></details>
 
 <details>
