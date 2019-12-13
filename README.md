@@ -2,7 +2,7 @@
 
 :information_source: &nbsp;This repository contains questions on various DevOps and SRE related topics
 
-:bar_chart: &nbsp;There are currently **609** questions
+:bar_chart: &nbsp;There are currently **630** questions
 
 :books: &nbsp;To learn more about DevOps check the resources in [DevOpsBit.com](https://devopsbit.com)
 
@@ -57,6 +57,7 @@
     <td align="center"><a href="#dns"><b>DNS</b></a><br /><sub><a href="#dns-beginner">Beginner :baby:</a></sub><br><sub></td>
     <td align="center"><a href="#virtualization"><b>Virtualization</b></a><br /><sub><a href="#virtualization-beginner">Beginner :baby:</a></sub><br><sub></td>
     <td align="center"><a href="#operating-system"><b>Operating System</b></a><br /><sub><a href="#operating-system-beginner">Beginner :baby:</a></sub><br><sub></td>
+    <td align="center"><a href="#distributed"><img src="images/distributed.png" width="110px;" height="75px;" alt="Distributed"/><br /><b>Distributed</b></a></td>
     <td align="center"><a href="#general"><img src="images/general.png" width="110px;" height="75px;" alt="General"/><br /><b>General</b></a></td>
     <td align="center"><a href="#scenarios"><img src="images/scenarios.png" width="110px;" height="75px;" alt="Scenarios"/><br /><b>Scenarios</b></a></td>
   </tr>
@@ -74,11 +75,20 @@
 <details>
 <summary>What is DevOps?</summary><br><b>
 
-There are many good answers to this question. I like Amazon's description of DevOps:
+There are many good answers to this question.
+
+Amazon:
 
 "DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market."
 
-You can find more details here: https://aws.amazon.com/devops/what-is-devops
+Microsoft:
+
+"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. The contraction of “Dev” and “Ops” refers to replacing siloed Development and Operations to create multidisciplinary teams that now work together with shared and efficient practices and tools. Essential DevOps practices include agile planning, continuous integration, continuous delivery, and monitoring of applications."
+
+Red Hat:
+
+"DevOps describes approaches to speeding up the processes by which an idea (like a new software feature, a request for enhancement, or a bug fix) goes from development to deployment in a production environment where it can provide value to the user. These approaches require that development teams and operations teams communicate frequently and approach their work with empathy for their teammates. Scalability and flexible provisioning are also necessary. With DevOps, those that need power the most, get it—through self service and automation. Developers, usually coding in a standard development environment, work closely with IT operations to speed software builds, tests, and releases—without sacrificing reliability."
+
 </b></details>
 
 <details>
@@ -93,7 +103,7 @@ You should mention some or all of the following:
   * Scale
   * Reliability
 
-Detailed answer can be found here: https://aws.amazon.com/devops/what-is-devops 
+Make sure to elaborate :)
 </b></details>
 
 <details>
@@ -225,6 +235,13 @@ One can argue whether it's per company definition or a global one but at least a
 <summary>What is "infrastructure as code"? What implementation of IAC are you familiar with?</summary><br><b>
 </b></details>
 
+<details>
+<summary>How do you manage build artifacts?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What Continuous Integration solution are you using/prefer and why?</summary><br><b>
+</b></details>
 
 <a name="devops-advanced"></a>
 #### :star: Advanced
@@ -375,6 +392,10 @@ You can describe the UI way to add new slaves but better to explain how to do in
 
 <a name="cloud-beginner"></a>
 #### :baby: Beginner
+
+<details>
+<summary>What is "Cloud"?</summary><br><b>
+</b></details>
 
 <details>
 <summary>What are the advantages of cloud computing? Mention at least 3 advantages</summary><br><b>
@@ -834,7 +855,13 @@ TCP establishes a connection between the client and the server to guarantee the 
 <details>
 <summary>What is your experience with Linux?</summary><br><b>
 
-An open question. Answer based on your real experience.
+An open question. Answer based on your real experience. You can highlight one or more of the following:
+
+* Troubleshooting & Debugging
+* Storage
+* Networking
+* Development
+* Deployments
 </b></details>
 
 <details>
@@ -853,6 +880,17 @@ An open question. Answer based on your real experience.
   * man
   * nslookup or dig
   * df</summary><br><b>
+
+  * ls - list files and directories. You can highlight common flags like -d, -a, -l, ...
+  * rm - remove files and directories. You should mention -r for recursive removal
+  * rmdir - remove directories but you should mention it's possible to use rm for that
+  * grep - print lines that match patterns. Could be nice to mention -v, -r, -E flags
+  * wc - print newline, word, and byte counts
+  * curl - tranfer a URL or mention common usage like downloading files, API calls, ...
+  * touch - update timestamps but common usage is to create files
+  * man - reference manuals
+  * nslookup or dig - query nameservers
+  * df - provides info regarding file system disk space usage
 </b></details>
 
 <details>
@@ -873,10 +911,6 @@ Note: There are many ways of getting errors like this: if bash_profile or any co
 permissions issues, bad compiled software (if you compiled it by yourself)... there is no answer that will be true 100% of the time.</b>
 </p>
 </details>
-
-<details>
-<summary>How to make sure a service will start on a OS of your choice?</summary><br><b>
-</b></details>
 
 <details>
 <summary>How do you schedule tasks periodically?</summary><br><b>
@@ -1010,6 +1044,14 @@ Hardware -> Kernel -> <u>Daemons</u>, System Libraries, Server Display.
 </b></details>
 
 <details>
+<summary>What kind of information one can find in /proc?</summary><br><b>
+</b></details>
+
+<details>
+<summary>How you measure time execution of a program?</summary><br><b>
+</b></details>
+
+<details>
 <summary>What is a Linux kernel module and how do you load a new module?</summary><br><b>
 </b></details>
 
@@ -1103,6 +1145,13 @@ Soft links can be created between different file systems while hard link can be 
 </b></details>
 
 <details>
+<summary>How to create a
+  * new empty file 
+  * a file with text (without using text editor)
+  * a file with given size</summary><br><b>
+</b></details>
+
+<details>
 <summary>You are trying to create a new file but you get "File system is full". You check with df for free space and you see you used only 20% of the space. What could be the problem?</summary><br><b>
 </b></details>
 
@@ -1131,6 +1180,10 @@ Soft links can be created between different file systems while hard link can be 
 </b></details>
 
 <details>
+<summary>Describe the process of extending a filesystem disk space</summary><br><b>
+</b></details>
+
+<details>
 <summary>What is lazy umount?</summary><br><b>
 </b></details>
 
@@ -1152,7 +1205,6 @@ Soft links can be created between different file systems while hard link can be 
   * /tmp
   * /var/log
   * /bin
-  * /proc
   * /usr/local
 </b></details>
 
@@ -1221,6 +1273,10 @@ Zombie (z)
 
 <details>
 <summary>What is a zombie process?</summary><br><b>
+
+A process which has finished to run but has not exited.
+
+One reason it happens is when a parent process is programmed incorrectly. Every parent process should execute wait() to get the exit code from the child process which finished to run. But when the parent isn't checking for the child exit code, the child process can still exists although it finished to run.
 </b></details>
 
 <details>
@@ -1314,6 +1370,10 @@ This is a great article on the topic: https://www.computerhope.com/jargon/f/file
 <summary>What firewalld daemon is responsible for?</summary><br><b>
 </b></details>
 
+<details>
+<summary>Do you have experience with hardening servers? Can you describe the process?</summary><br><b>
+</b></details>
+
 ##### Network
 
 <details>
@@ -1383,8 +1443,22 @@ You can specify one or more of the following:
 <summary>How do you list the content of a package without actually installing it?</summary><br><b>
 </b></details>
 
+<details>
+<summary>How to know to which package a file on the system belongs to?</summary><br><b>
+</b></details>
+
 ##### Applications and Services
 
+<details>
+<summary>How to make sure a Service starts automatically after a reboot or crash?</summary><br><b>
+
+Depends on the init system.
+
+Systemd: <code> systemctl enable [service_name] </code>
+System V: <code> update-rc.d [service_name] </code> and add this line <code> id:5678:respawn:/bin/sh /path/to/app </code> to /etc/inittab
+Upstart: add Upstart init script at /etc/init/service.conf
+
+</b></details>
 <details>
 <summary>What is a load balancer?</summary><br><b> 
 </b></details>
@@ -1424,6 +1498,10 @@ You can specify one or more of the following:
 
 <details>
 <summary>Do you know how to create a new user without using adduser/useradd command?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What information is stored in /etc/passwd?</summary><br><b>
 </b></details>
 
 <details>
@@ -1508,6 +1586,10 @@ There are a couple of ways to do that:
 </b></details>
 
 <details>
+<summary>Explain the fork() system call</summary><br><b>
+</b></details>
+
+<details>
 <summary>What are the differences between the following system calls?: exec(), fork(), vfork() and clone()?</summary><br><b>
 </b></details>
 
@@ -1557,6 +1639,29 @@ There are many ways to answer that. For those who look for simplicity, the book 
 
 <details>
 <summary>How a process is created?</summary><br><b>
+
+* The OS is reading program's code and any additional relevant data
+* Program's bytes are loaded into the memory or more specifically, into the address space of the process.
+* Memory is allocated for program's stack (aka run-time stack). The stack also initialized by the OS with data like argv, argc and parameters to main()
+* Memory is allocated for program's heap which is required for data structures like linked lists and hash tables
+* I/O initialization tasks like in Unix/Linux based systems where each process has 3 file descriptors (input, output and error)
+* OS is running the program, strarting from main()
+
+Note: The loading of the program's code into the memory done lazily which means the OS loads only partial relevant pieces required for the process to run and not the entire code.
+</b></details>
+
+<details>
+<summary>True or False? The loading of the program into the memory is done eagerly (all at once)</summary><br><b>
+
+False. It was true in the past but today's operating systems perform lazy loading which means only the relevant pieces required for the process to run are loaded first.
+</b></details>
+
+<details>
+<summary>What are different states of a process?</summary><br><b>
+
+* Running - it's executing instructions
+* Ready - it's ready to run but for different reasons it's on hold
+* Blocked - it's waiting for some operation to complete. For example I/O disk request
 </b></details>
 
 ## Virtualization
@@ -1995,7 +2100,7 @@ You should choose VMs when:
   * you need full isolation and security
 
 You should choose containers when:
-  * you need a lightweight solution that quickly starts
+  * you need a lightweight solution
   * Running multiple versions or instances of a single application
 </b></details>
 
@@ -2021,6 +2126,7 @@ Docker daemon redirects output from container to Docker CLI which redirects it t
 </b></details>
 
 <details>
+<<<<<<< HEAD
 <summary>What best practices are you familiar related to working with containers?</summary><br><b>
 Least Privilidge/Not having the container run as root
 .dockerignore --> removing files like .git from the docker container 
@@ -2028,6 +2134,8 @@ Least Privilidge/Not having the container run as root
 </b></details>
 
 <details>
+=======
+>>>>>>> upstream/master
 <summary>What `docker commit` does?. When will you use it?</summary><br><b>
 When you interactively make changes on a container, docker commit allows the user to save these changes with 'docker commit containter-id'
 </b></details>
@@ -2048,6 +2156,7 @@ Data not stored in volumes are lost
   * docker run
   * docker rm
   * docker ps
+  * docker pull
   * docker build
   * docker commit</summary><br><b>
 </b></details>
@@ -2080,8 +2189,19 @@ https://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
 </b></details>
 
 <details>
+<summary>Do you perform any checks or testing related to your Dockerfile?</summary><br><b>
+
+A common answer to this is to use [hadolint](https://github.com/hadolint/hadolint) project which is a linter based on Dockerfile best practices.
+</b></details>
+
+<details>
 <summary>Explain what is Docker compose and what is it used for</summary><br><b>
+<<<<<<< HEAD
 Managing communication between containers. Having one container only be responsible to one task ie application container, redis container, postgres container. 
+=======
+
+Docker Compose is used for running multi-container applications 
+>>>>>>> upstream/master
 </b></details>
 
 <details>
@@ -2118,6 +2238,10 @@ Each step in a Dockerfile create a layer that are joined together to create the 
 
 <a name="docker-advanced"></a>
 #### :star: Advanced
+
+<details>
+<summary>What best practices are you familiar related to working with containers?</summary><br><b>
+</b></details>
 
 <details>
 <summary>How do you manage persistent storage in Docker?</summary><br><b>
@@ -2175,6 +2299,18 @@ Kubernetes is especially good for scenarios when you no longer running small num
 
 <details>
 <summary>What is kubconfig? What do you use it for?</summary><br><b>
+</b></details>
+
+<details>
+<summary>You suspect one of the pods is having issues, what do you do?</summary><br><b>
+
+Start by inspecting the pods status. we can use the command `kubectl get pods` (--all-namespaces for pods in system namespace)<br>
+
+If we see "Error" status, we can keep debugging by running the command `kubectl describe pod [name]`. In case we still don't see anything useful we can try stern for log tailing.<br>
+
+In case we find out there was a temporary issue with the pod or the system, we can try restarting the pod with the following `kubectl scale deployment [name] --replicas=0`<br>
+
+Setting the replicas to 0 will shut down the process. Now start it with `kubectl scale deployment [name] --replicas=1`
 </b></details>
 
 ## Coding
@@ -3104,6 +3240,10 @@ Infrastructure montioring --> data dog, prometheus (cpu, memory, ram)
 </b></details>
 
 <details>
+<summary>Have you set up Prometheus? How did you do it? Describe the process</summary><br><b>
+</b></details>
+
+<details>
 <summary>Can you compare Prometheus to other solutions like InfluxDB for example?</summary><br><b>
 </b></details>
 
@@ -3141,6 +3281,10 @@ Alert manager is responsible for alerts ;)
 
 <details>
 <summary>How to get total requests in a given period of time?</summary><br><b>
+</b></details>
+
+<details>
+<summary>What HA in Prometheus means?</summary><br><b>
 </b></details>
 
 <a name="prometheus-advanced"></a>
@@ -3257,6 +3401,14 @@ git checkout HEAD~1 -- /path/of/the/file
 
   * Not waiting to long between commits
   * Not removing the .git directory :)
+</b></details>
+
+<details>
+<summary>How do you remove a remote branch?</summary><br><b>
+
+You delete a remote branch with this syntax:
+
+git push origin :[branch_name]
 </b></details>
 
 <a name="git-advanced"></a>
@@ -4396,6 +4548,22 @@ While an A record points a domain name to an IP address, a PTR record does the o
 <summary>What is a zone? What types of zones are there?</summary><br><b>
 </b></details>
 
+## Distributed
+
+<details>
+<summary>Explain Distributed Computing</summary><br><b>
+</b></details>
+
+<details>
+<summary>Do you know what is CAP theorem" (aka as Brewer's theorem)</summary><br><b>
+
+According to the CAP theorem, it's not possible for a distributed data store to provide more than two of the following at the same time:
+
+* Availability: Every request receives a response (it doesn't has to be the most recent data)
+* Consistency: Every request receives a response with the latest/most recent data
+* Partition tolerance: Even if some the data is lost/dropped, the system keeps running 
+</b></details>
+
 ## General
 
 Although the following questions are not DevOps related, they are still quite common so it's better to prepare for them as well.
@@ -4420,6 +4588,7 @@ Although the following questions are not DevOps related, they are still quite co
 <summary>How did you hear about us?</summary><br><b>
 
 Tell them how did you hear about them :D
+Relax, there is no wrong or right answer here...I think.
 </b></details>
 
 <details>
@@ -4440,12 +4609,14 @@ Tell them how did you hear about them :D
 
 <details>
 <summary>Have you ever caused a service outage? (or broke a working project, tool, ...?)</summary><br><b>
+
+If you worked in this area for more than 5 areas it's hard to imagine the answer would be no. It also doesn't have to be big service outage. Maybe you merged some code that broke a project or its tests. Simply focus on what you learned from such experience.
 </b></details>
 
 <details>
 <summary>Rank the following in order 1 to 5, where 1 is most important: salaray, benefits, career, team/people, work life balance</summary><br><b>
 
-Don't put salary in bottom or top.
+You know best your order just have a good thought if you really want to put salary in top or bottom....
 </b></details>
 
 <details>
@@ -4454,20 +4625,43 @@ Don't put salary in bottom or top.
 
 <details>
 <summary>You have a colleague you don‘t get along with. Tell us some strategies how you create a good work relationship with them anyway.</summary><br><b>
+
+Bad answer: I don't.
+Better answer: Every person has strengths and weaknesses. This is true also for colleagues I don't have good work relationship with and this is what helps me to create good work relationship with them. If I am able to highlight or recognize their strengths I'm able to focus mainly on that when communicating with them.
 </b></details>
 
 <details>
 <summary>What do you love about your work?</summary><br><b>
+
+You know the best, but some ideas if you find it hard to express yourself:
+
+* Diversity
+* Complexity
+* Challenging
+* Communication with several different teams
+</b></details>
+
+<details>
+<summary>What are your responsibilities in your current position?</summary><br><b>
+
+You know the best :)
 </b></details>
 
 <details>
 <summary>Why should we hire you for the role?</summary><br><b>
+
+You can use and elaborate on one or all of the following:
+
+* Passion
+* Motivation 
+* Autodidact
+* Creativity (be able to support it with some actual examples)
 </b></details>
 
 ## Questions you CAN ask
 
 A list of questions you as a candidate can ask the interviewer during or after the interview.
-These are only a suggestion. Use them carefully :)
+These are only a suggestion, use them carefully. Not every interviewer will be able to answer these (or happy to) which should be perhaps a red flag warning for your regarding working in such place but that's really up to you.
 
 <details>
 <summary>What do you like about working here?</summary><br><b>
@@ -4509,6 +4703,8 @@ you can show how you'd be able to mitigate that problem.
 
 <details>
 <summary>Let's say that we agree and you hire me to this position, after X months, what do you expect that I have achieved?</summary><br><b>
+
+Not only this will tell you what is expected from you, it will also provide big hint on the type of work you are going to do in the first months of your job.
 </b></details>
 
 ## Scenarios
@@ -4529,6 +4725,7 @@ Below you can find several scenario questions:
 * [Jenkins: writing scripts](scenarios/jenkins_scripts.md)
 * [Jenkins: writing pipelines](scenarios/jenkins_pipelines.md)
 * [CI for open source project](scenarios/ci_for_open_source_project.md)
+
 
 ## Credits
 
