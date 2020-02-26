@@ -513,16 +513,13 @@ A way for allowing a service of AWS to use another service of AWS. You assign ro
 </b></details>
 
 <details>
-<<<<<<< HEAD
 <summary>What is IAM?</summary><br><b>
 IAM - Identity and Acess Management
 A way to manage access and authorization for AWS resources. ie access groups 
 Admins, Read-Only 
-=======
 <summary>What are Policies?</summary><br><b>
 
 Policies documents used to give permissions as to what a user, group or role are able to do. Their format is JSON.
->>>>>>> upstream/master
 </b></details>
 
 #### S3
@@ -682,13 +679,10 @@ A transport solution which was designed for transferring large amounts of data (
   * AWS Shield</summary><br><b>
 </b></details>
 
-<<<<<<< HEAD
 <summary>What AWS VPN is used for?</summary><br><b>
 Managing network based acess for users within a security group. 
-=======
 <details>
 <summary>What is AWS WAF? Give an example of how it can used and describe what resources or services you can use it with</summary><br><b>
->>>>>>> upstream/master
 </b></details>
 
 <details>
@@ -707,12 +701,8 @@ True
 #### AWS Databases
 
 <details>
-<<<<<<< HEAD
 <summary>What is RDS?</summary><br><b>
 AWS distributed, highly-available, fault tolerant database solution. 
-=======
-<summary>What is Amazon RDS?</summary><br><b>
->>>>>>> upstream/master
 </b></details>
 
 <details>
@@ -1277,16 +1267,10 @@ Using the `chmod` command.
 
 <details>
 <summary>You try to delete a file but it fails. Name at least three different reason as to why it could happen</summary><br><b>
-<<<<<<< HEAD
-1. Permission
-2.
-3. 
-=======
 
 * No more disk space
 * No more indoes
 * No permissions
->>>>>>> upstream/master
 </b></details>
 
 <details>
@@ -2734,14 +2718,8 @@ Output variables are named values that are sourced from the attributes of a modu
 #### :baby: beginner
 
 <details>
-<<<<<<< HEAD
-<summary>What is Docker? What are you using it for?</summary><br>
-<b>
-    Containers. Hosting applications that are to be run/deployed in different enviornments. 
-=======
 <summary>What is Docker? What are you using it for?</summary><br><b>
 Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
->>>>>>> upstream/master
 </b></details>
 
 <details>
