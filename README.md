@@ -2126,7 +2126,6 @@ Docker daemon redirects output from container to Docker CLI which redirects it t
 </b></details>
 
 <details>
-<<<<<<< HEAD
 <summary>What best practices are you familiar related to working with containers?</summary><br><b>
 Least Privilidge/Not having the container run as root
 .dockerignore --> removing files like .git from the docker container 
@@ -2134,8 +2133,6 @@ Least Privilidge/Not having the container run as root
 </b></details>
 
 <details>
-=======
->>>>>>> upstream/master
 <summary>What `docker commit` does?. When will you use it?</summary><br><b>
 When you interactively make changes on a container, docker commit allows the user to save these changes with 'docker commit containter-id'
 </b></details>
